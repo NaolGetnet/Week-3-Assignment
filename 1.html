@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+#1
+
+
+<script>
+    newarr = [];
+    oldarr = [5,2,8,9];
+function evenodd (a)
+{
+
+    for (i of a)
+    {
+        if (i%2 == 0)
+        {
+            newarr.push(i*2)
+        }
+        else if (i%2 != 0)
+        {
+            newarr.push(-1)
+        }
+    }
+    
+        console.log(newarr,' - one');
+    
+
+}
+
+evenodd(oldarr)
+    
+</script>
+
+
+#2
+
+
+<script>
+    a = 'howard';
+    novowel = [];
+    function novoweler ()
+    
+    {
+        for (i of a)
+    {
+        if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u" || i == "A" || i == "E" || i == "I" || i == "O" || i == "U")
+        {
+            continue;
+        }
+        else
+        {
+            novowel.push(i)
+        }
+    }
+    
+    console.log(novowel.join(''), ' - two');
+    }
+    novoweler(a);
+</script>
+
+
+
+
+#3
+
+
+<script>
+    b = ['davido','batman','justdoit','man','lebala'];
+    overfour = [];
+    function overfourer ()
+    
+    {
+        for (i of b)
+    {
+        if (i.length < 4)
+        {
+            continue;
+        }
+        else
+        {
+            
+            overfour.push(i)
+        }
+    }
+    
+    console.log(overfour , ' - three');
+    }
+    overfourer(b);
+</script>
+
+
+
+
+
+#4
+
+
+
+
+<script>
+    a = [4,5,8,6,2,4,8,6,,71,6,96,3,45,7,9];
+    diff = 0;
+    temp = 0;
+    function differ (arr)
+    {
+        for (i = 0; i < arr.length - 1; i++)
+        {
+            diff = arr[i+1] - arr[i];
+            Math.abs(diff);
+          
+            if (diff>temp)
+            {
+                temp = diff;
+            }
+        }
+        console.log(temp, ' - four')
+    }
+    differ(a);
+</script>
+
+
+
+
+
+
+
+
+
+#5
+
+
+
+
+
+
+
+<script>
+    a = [1,5,91,6,3,7,8,2,45,54]
+    function secmax(arr)
+    {
+        sec = 0;
+    max = 0;
+    for (i of arr)
+    {
+        for (j of arr)
+        {
+            if (j>i)
+            {
+                sec = max;
+                max = j
+            }
+        }
+    }
+    console.log(sec,' - five')
+    }
+    secmax(a)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+#6
+
+
+
+
+
+<script>
+    a = 'babab';
+    bool = true;
+    function pal(arr)
+    {
+        for (i = 0; i < arr.length; i++)
+        {
+            if (arr[i] == arr[((arr.length)-1)-i])
+            {
+                bool = true;
+            }
+            else 
+            {
+                bool = false;
+            }
+        }
+        console.log(bool, ' - six')
+    }
+    pal(a);
+    
+</script>
+
+
+
+
+
+#7
+
+
+
+
+
+
+
+<script>
+    a = ['baba','kalak','lokik','kikjk'];
+    newlist = [];
+    function rev(arr)
+    {
+        for (i = 0; i < arr.length; i++)
+            {
+                
+                    newlist[i] = arr[i].split("").reverse().join("");
+                   
+            }
+        console.log(newlist, ' - seven');
+    }
+    rev(a)
+
+</script>
+
+
+
+
+
+
+#8
+
+
+
+
+<script>
+    a = ['I' , 6 , 8, 4 ,'a', 'bet']
+    b = ['bet' , 8 , 6 , 5  , 'a','bet',4]
+
+    newlist = [];
+    function same(a,b)
+    {
+        for (i of a)
+        {
+            for (j of b)
+                {
+                    if (i == j)
+                        {
+                            newlist.push(i);
+                            break;
+                        }
+                    
+                }
+        }
+        console.log(newlist, ' - eight')
+    }
+    same(a,b)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#9
+
+
+
+
+
+
+
+
+
+<script>
+    a = [1,5,9,15,23,24,25,60,15,90,2]
+    sum = 0;
+    function sumer(arr)
+    {
+        for (i of arr)
+        {
+            if (i%5 == 0 || i%3 == 0)
+                {
+                    sum += i;
+                }
+        }
+        console.log(sum, ' - nine')
+    }
+sumer(a)
+
+</script>
+
+
+
+
+
+
+#10 
+
+
+
+
+<script>
+    a = 'all of us will be all of us'
+    temp = [];
+    function caps(str)
+    {
+       temp = str.split(' ');
+       for (i = 0; i < temp.length; i++)
+       {
+        temp[i] = temp[i][0].toUpperCase() + temp[i].substr(1);
+       }
+       console.log(temp.join(' '), ' - ten')
+    }
+    caps(a);
+</script>
+
+<body>
+    
+</body>
+</html>
